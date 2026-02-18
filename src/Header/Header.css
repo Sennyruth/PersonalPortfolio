@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    justify-items:center;
+    justify-content:space-between;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background-color:  #38bdf8;
+    gap: 5rem;
+}
+.right {
+   padding-right: 5rem;
+
+}
+.lefttitle{
+    padding-left: 2rem;
+}
+.nav-section{
+    display: flex;
+    align-items: flex-end;
+    gap: 3rem;
+}
+li{
+    display: flex;
+    list-style: none;
+    color: white;
+}
