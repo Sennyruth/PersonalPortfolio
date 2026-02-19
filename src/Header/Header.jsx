@@ -1,27 +1,63 @@
+import React, { useState } from 'react'
 import "./Header.css"
-function Header ()
-    {
-        return (
-             <>
-             <div className="header">
-                <div className="lefttitle">
-                    <h2>Ruth Mutisya</h2>
-                </div>
-                <div className="right">
-                    <nav className="nav-section">
-                        <li> <a href="about"></a>About</li>
-                         <li> <a href=""></a>Skills</li>
-                          <li><a href=""></a>projects</li>
-                           <li><a href=""></a>experience</li>
-                            <li><a href=""></a>contact</li>
-                    </nav>
-                    
-                </div>
-             </div>
 
-        </>
+function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-        )
-       
-    }
-    export default Header
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
+  const closeMenu = () => {
+    setIsMenuOpen(false)
+  }
+
+  return (
+    <header className="header">
+      <div className="container">
+        <div className="header-content">
+          <div className="logo">
+            <h2>Ruth Mutisya</h2>
+          </div>
+          
+          {/* Desktop Navigation */}
+          <nav className="nav desktop-nav">
+            <ul className="nav-list">
+              <li><a href="#about" onClick={closeMenu}>About</a></li>
+              <li><a href="#services" onClick={closeMenu}>Services</a></li>
+              <li><a href="#skills" onClick={closeMenu}>Skills</a></li>
+              <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
+              <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+            </ul>
+          </nav>
+
+          {/* Mobile Hamburger Menu */}
+          <div className="mobile-menu-toggle">
+            <button 
+              className="hamburger-btn" 
+              onClick={toggleMenu}
+              aria-label="Toggle navigation menu"
+            >
+              <span className="hamburger-line"></span>
+              <span className="hamburger-line"></span>
+              <span className="hamburger-line"></span>
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Navigation */}
+        <nav className={`mobile-nav ${isMenuOpen ? 'nav-open' : ''}`}>
+          <ul className="mobile-nav-list">
+            <li><a href="#about" onClick={closeMenu}>About</a></li>
+            <li><a href="#services" onClick={closeMenu}>Services</a></li>
+            <li><a href="#skills" onClick={closeMenu}>Skills</a></li>
+            <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
+            <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  )
+}
+
+export default Header

@@ -1,25 +1,25 @@
 
 import './App.css'
-import Header from "../src/Header/Header"
-import Hero from "../src/Hero/Hero"
+import Header from "./Header/Header"
+import Hero from "./Hero/Hero"
 import About from './About/About'
+import Services from './Services/Services'
+import Projects from './Projects/Projects'
+import Testimonials from './Testimonials/Testimonials'
+import Contact from './Contact/Contact'
 import Skills from './Skills/Skills'
-import Projects from './Projectss/Projects'
-import Exp from './Experience/Exp'
-
 
 function App() {
- 
-
   return (
     <>
-      
-    <Header/>  
-    <Hero/> 
-    <About/> 
-    <Exp/>
-    <Projects/>
-    <Skills/>
+      <Header/>  
+      <Hero/> 
+      <About/> 
+      <Services/>
+      <Projects/>
+      <Testimonials/>
+      <Skills/>
+      <Contact/>
     </>
   )
 }
