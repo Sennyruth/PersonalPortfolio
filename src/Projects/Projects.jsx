@@ -20,28 +20,36 @@ const Projects = () => {
       code: "https://github.com/Sennyruth/Zero-4-Garden.git"
     },
     {
-      title: "Zaph Tours",
-      description: "A travel company website with tour packages and booking system.",
-      technologies: ["React", "Express", "PostgreSQL"],
+      title: "Personalized Medicine Recommendation System",
+      description: "The Personalized Medicine Recommendation System is a full-stack healthcare web application that leverages machine learning and Google's Gemini AI",
+      technologies: ["React", "Express", "PostgreSQL","Node.js", "Python", "Flask", "Scikit-learn", "Pandas", "NumPy"],
       image: "💬",
-      liveDemo: "https://zaph-tours-kappa.vercel.ap",
-      code: "https://github.com/Sennyruth/Zaph_Tours.git"
+      liveDemo: "https://personalized-medicine-recommendatio.vercel.app/",
+      code: "https://github.com/Sennyruth/Personalized-Medicine-Recommendation-system.git"
     },
     {
-      title: "MUT TECH CLUB",
-      description: "A tech club website with event management and member registration.",
-      technologies: ["React", "Node.js", "PostgreSQL", "Express"],
+      title: "MPESA PAYMENT INTEGRATION WITH DARAJA API",
+      description: "A beginner-friendly M-Pesa payment integration using Safaricom's Daraja API with STK Push and a live web frontend.",
+      technologies: ["React", "css"],
       image: "💻",
-      liveDemo: "https://mut-tech-club-eta.vercel.app/",
-      code: "https://github.com/Sennyruth/MUT_Tech_Club.git"
+      liveDemo: "https://mpesa-daraja-api-production.up.railway.app/",
+      code: "https://github.com/Sennyruth/MPESA-DARAJA-API.git"
     },
     {
-      title: "Urban Haven Apartments",
-      description: "A modern apartment rental website with property listings and booking system.",
+      title: "Modern ERP System",
+      description: "A full-stack Retail ERP system built with Node.js, Express, Prisma ORM, PostgreSQL, and React. Features Sales & CRM, Inventory & Warehouse, and HR & Payroll modules with a modern editorial UI design.",
       technologies: ["React", "CSS", "Vite"],
       image: "🏠",
-      liveDemo: "https://urban-haven-apartments-sandy.vercel.app/",
-      code: "https://github.com/Sennyruth/Zaph_Tours.git"
+      liveDemo: "#",
+      code: "https://github.com/Sennyruth/Modern-ERP-System.git"
+    },
+     {
+      title: "Online-Test-Exam-Management-System",
+      description: "A fullstack web application that enables teachers to create and manage online tests, while students can take exams, view their attempts, check results, and track performance through a dedicated dashboard",
+      technologies: ["React", "Node.js", "Typescript", "Express", "PostgreSQL"],
+      image: "💻",
+      liveDemo: "#",
+      code: "https://github.com/Sennyruth/Online-Test-Exam-Management-System.git"
     },
     {
       title: "Rock paper scissors",
@@ -51,14 +59,7 @@ const Projects = () => {
       liveDemo: "https://rock-paper-scissors-flax-three.vercel.app/",
       code: "https://github.com/Sennyruth/Rock_paper_scissors.git"
     },
-    {
-      title: "Portfolio",
-      description: "A personal Portfolio website showcasing my work and skills.",
-      technologies: ["HTML", "Node.js", "Tailwind CSS", "Vite"],
-      image: "💻",
-      liveDemo: "https://tailwindcss-portfolio-nine.vercel.app/",
-      code: "https://github.com/Sennyruth/Tailwindcss_portfolio.git"
-    },
+   
     {
       title: "Neuskin Beauty Parlor",
       description: "A beauty parlor website with services and booking system.",
